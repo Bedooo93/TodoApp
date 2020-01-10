@@ -1,0 +1,91 @@
+body,html{
+    height: 100%;
+    background-color: #1A60FF;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px auto;
+    grid-template-areas: 
+    "h h h"
+    "i i i"
+    "t t t";
+    grid-gap: 3px;
+
+}
+
+#title{
+    grid-area: h;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+#input-bar{
+    grid-area: i;
+
+}
+
+#userInput{
+    background-color: #7FA6FF;
+    border-radius: 20px 200px 20px 20px;
+    border-style: none;
+    width: 70%;
+    height: 50%;
+    font-size: 20px;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
+  
+}
+
+#todoList{
+    grid-area: t;
+    color: black;
+    font-size: 20px;
+}
+ul{
+    background-color: #ADC6FF;
+    border-radius: 10px 10px 10px 10px;
+    list-style-type: none;
+}
+
+#addButton{
+    background-color: #0D6;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.remove{
+    float: right;
+    border-radius: 50%;
+    background: rgb(221, 0, 0);
+    color: white;
+    font-size: 12px;
+    border: none;
+}
+.edit{
+    float: right;
+    border-radius: 50%;
+    background: rgb(221, 217, 0);
+    color: white;
+    font-size: 12px;
+    border: none;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: rgb(240, 146, 146);
+    color: white;
+}
+
+/* 
+.container > div:nth-child(1n){
+    background-color: ;
+}
+.container > div:nth-child(2n){
+    background-color: ;
+}
+.container > div:nth-child(3n){
+    background-color:;
+} */
